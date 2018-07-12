@@ -19,7 +19,8 @@
 				'graph_data' => $data,
 				'created' => $created,
 				'modified' => $edit_date,
-				'modified_by' => $edited_by
+				'modified_by' => $edited_by,
+				'curated' => "not-working-yet"
 			);
 
 			array_push($output_array['data'], $algorithm);
