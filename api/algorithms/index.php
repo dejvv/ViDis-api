@@ -7,6 +7,10 @@
 			$email = $row["e-mail"];
 			$edit_date = $row["edit-date"];
 			$edited_by = $row["edited-by"];
+			$curated = $row["curated"];
+			$private = $row["private"];
+			$algorithm_language = $row["algorithm_language"];
+
 			
 			extract($row);
 			$algorithm = array(
@@ -20,7 +24,9 @@
 				'created' => $created,
 				'modified' => $edit_date,
 				'modified_by' => $edited_by,
-				'curated' => "not-working-yet"
+				'curated' => $curated,
+				'private' => $private,
+				'algorithm_language' => $algorithm_language,
 			);
 
 			array_push($output_array['data'], $algorithm);
